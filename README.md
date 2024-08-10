@@ -23,6 +23,10 @@
 </p>
 
 <p align="center">
+fork from https://github.com/TerminalStudio/dartssh2 due to https://github.com/TerminalStudio/dartssh2/issues/105 for Emergency use
+</p>
+
+<p align="center">
 SSH and SFTP client written in pure Dart, aiming to be feature-rich as well as easy to use.
 </p>
 
