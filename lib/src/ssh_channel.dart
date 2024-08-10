@@ -3,12 +3,12 @@ import 'dart:math';
 
 import 'dart:typed_data';
 
-import 'package:dartssh2/src/ssh_channel_id.dart';
-import 'package:dartssh2/src/ssh_transport.dart';
-import 'package:dartssh2/src/utils/async_queue.dart';
-import 'package:dartssh2/src/message/msg_channel.dart';
-import 'package:dartssh2/src/ssh_message.dart';
-import 'package:dartssh2/src/utils/stream.dart';
+import 'package:dartssh2_plus/src/ssh_channel_id.dart';
+import 'package:dartssh2_plus/src/ssh_transport.dart';
+import 'package:dartssh2_plus/src/utils/async_queue.dart';
+import 'package:dartssh2_plus/src/message/msg_channel.dart';
+import 'package:dartssh2_plus/src/ssh_message.dart';
+import 'package:dartssh2_plus/src/utils/stream.dart';
 
 /// Handler of channel requests. Return true if the request was handled, false
 /// if the request was not recognized or could not be handled.

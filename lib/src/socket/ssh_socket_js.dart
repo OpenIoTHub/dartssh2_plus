@@ -1,4 +1,4 @@
-import 'package:dartssh2/src/socket/ssh_socket.dart';
+import 'package:dartssh2_plus/src/socket/ssh_socket.dart';
 
 Future<SSHSocket> connectNativeSocket(
   String host,

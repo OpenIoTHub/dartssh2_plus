@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:dartssh2/dartssh2.dart';
+import 'package:dartssh2_plus/dartssh2.dart';
 
 void main(List<String> args) async {
   final client = SSHClient(

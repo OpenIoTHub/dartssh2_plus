@@ -1,4 +1,4 @@
-import 'package:dartssh2/src/kex/kex_nist.dart';
+import 'package:dartssh2_plus/src/kex/kex_nist.dart';
 import 'package:test/test.dart';
 
 void main() {

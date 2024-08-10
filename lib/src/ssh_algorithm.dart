@@ -1,9 +1,9 @@
-import 'package:dartssh2/src/algorithm/ssh_cipher_type.dart';
-import 'package:dartssh2/src/algorithm/ssh_hostkey_type.dart';
-import 'package:dartssh2/src/algorithm/ssh_kex_type.dart';
-import 'package:dartssh2/src/algorithm/ssh_mac_type.dart';
+import 'package:dartssh2_plus/src/algorithm/ssh_cipher_type.dart';
+import 'package:dartssh2_plus/src/algorithm/ssh_hostkey_type.dart';
+import 'package:dartssh2_plus/src/algorithm/ssh_kex_type.dart';
+import 'package:dartssh2_plus/src/algorithm/ssh_mac_type.dart';
 
-abstract class SSHAlgorithm {
+mixin SSHAlgorithm {
   /// The name of the algorithm.
   String get name;
 

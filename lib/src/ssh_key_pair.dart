@@ -4,15 +4,15 @@ import 'dart:typed_data';
 
 import 'package:asn1lib/asn1lib.dart';
 import 'package:convert/convert.dart';
-import 'package:dartssh2/dartssh2.dart';
-import 'package:dartssh2/src/hostkey/hostkey_ecdsa.dart';
-import 'package:dartssh2/src/hostkey/hostkey_ed25519.dart';
-import 'package:dartssh2/src/hostkey/hostkey_rsa.dart';
-import 'package:dartssh2/src/ssh_hostkey.dart';
-import 'package:dartssh2/src/ssh_message.dart';
-import 'package:dartssh2/src/utils/bcrypt.dart';
-import 'package:dartssh2/src/utils/cipher_ext.dart';
-import 'package:dartssh2/src/utils/list.dart';
+import 'package:dartssh2_plus/dartssh2.dart';
+import 'package:dartssh2_plus/src/hostkey/hostkey_ecdsa.dart';
+import 'package:dartssh2_plus/src/hostkey/hostkey_ed25519.dart';
+import 'package:dartssh2_plus/src/hostkey/hostkey_rsa.dart';
+import 'package:dartssh2_plus/src/ssh_hostkey.dart';
+import 'package:dartssh2_plus/src/ssh_message.dart';
+import 'package:dartssh2_plus/src/utils/bcrypt.dart';
+import 'package:dartssh2_plus/src/utils/cipher_ext.dart';
+import 'package:dartssh2_plus/src/utils/list.dart';
 import 'package:pinenacl/ed25519.dart' as ed25519;
 import 'package:pointycastle/export.dart';
 
@@ -298,7 +298,7 @@ abstract class OpenSSHKeyPair implements SSHKeyPair {
   }
 }
 
-class OpenSSHRsaKeyPair with OpenSSHKeyPair {
+class OpenSSHRsaKeyPair extends OpenSSHKeyPair {
   @override
   final name = 'ssh-rsa';
 
@@ -372,7 +372,7 @@ class OpenSSHRsaKeyPair with OpenSSHKeyPair {
   }
 }
 
-class OpenSSHEd25519KeyPair with OpenSSHKeyPair {
+class OpenSSHEd25519KeyPair extends OpenSSHKeyPair {
   @override
   final name = 'ssh-ed25519';
 
@@ -418,7 +418,7 @@ class OpenSSHEd25519KeyPair with OpenSSHKeyPair {
   }
 }
 
-class OpenSSHEcdsaKeyPair with OpenSSHKeyPair {
+class OpenSSHEcdsaKeyPair extends OpenSSHKeyPair {
   @override
   String get name => 'ecdsa-sha2-$curveId';
 
